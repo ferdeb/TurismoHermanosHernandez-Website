@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turismo Hermanos Hernandez</title>
+
+  <!-- Hojas de estilo -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/desktop.css" media="screen and (min-width: 800px)" />
+
+  <!-- Iconos footer -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="" type="image/x-icon" />
+</head>
+
+<body>
+  <nav class="nav">
+    <input type="checkbox" name="" id="nav__checkbox" class="nav__checkbox" />
+    <label for="nav__checkbox" class="nav__toggle">
+      <!-- Menu -->
+      <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+        <path
+          d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+      </svg>
+
+      <!-- Close -->
+      <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+        <path
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+      </svg>
+    </label>
+
+    <ul class="nav__menu">
+      <li class="menu__logo">
+        <a href="index.html">
+          <img src="assets/images/LOGOfinal.png" alt="Logo THH" />
+        </a>
+      </li>
+      <li><a href="promociones.html">Promociones</a></li>
+      <li><a href="terminales.html">Terminales</a></li>
+      <li><a href="misviajes.html">Mis Viajes</a></li>
+      <li><a href="ayuda.html">Ayuda</a></li>
+      <li><a href="login.html" id="nav__menu-login">Iniciar Sesion</a></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+
+    <section class="content-viajes"> <!-- Apartado de viajes -->
+      <h1 class="viajes__title">¿A donde vas a viajar?</h1>
+      <div class="boxes-alignment">
+
+        <form class="boxes-alignment">
+
+          <div class="box-size boxes-alignment">
+            <label for="lang">¿Desde donde viajas?</label>
+            <select name="partida" id="partida">
+              <option value="Tabasco">Tabasco</option>
+              <option value="Quintana">Quintana Roo</option>
+              <option value="Veracruz">Veracruz</option>
+              <option value="TAPO">TAPO CDMX</option>
+              <option value="SANTAM">Santa Martha Acatitla</option>
+            </select>
+          </div>
+
+          <div class="box-size boxes-alignment">
+            <label for="lang">¿Hacia donde viajas?</label>
+            <select name="partida" id="partida">
+              <option value="Tabasco">Tabasco</option>
+              <option value="Quintana">Quintana Roo</option>
+              <option value="Veracruz">Veracruz</option>
+              <option value="TAPO">TAPO CDMX</option>
+              <option value="SANTAM">Santa Martha Acatitla</option>
+            </select>
+          </div>
+
+          <div class="box-size boxes-alignment">
+            <p>Fecha y hora de ida</p>
+            <input type="date" name="" id="">
+            <input type="time">
+          </div>
+
+          <div class="box-size box-buscarviaje">
+            <a href="horariosprecios.html">¡Buscar Viaje!</a>
+          </div>
+        </form>
+
+      </div>
+
+    </section>
+
+    <section class="boxes-alignment"> <!-- Apartado de links -->
+
+      <div class="box-size__links">
+        <a href="">Recomendados</a>
+      </div>
+
+      <div class="box-size__links">
+        <a href="">Promociones</a>
+      </div>
+
+    </section>
+
+    <section> <!-- Apartado de destinos -->
+
+      <h1 class="viajes__title">Principales Destinos</h1>
+
+      <div class="boxes-alignment">
+
+        <div class="box-size__destinos box-destinosimagenes">
+          <picture>
+            <img src="/assets/images/1THH.jpeg" alt="">
+          </picture>
+        </div>
+
+        <div class="box-size__destinos box-destinosimagenes">
+          <picture>
+            <img src="/assets/images/2THH.jpeg" alt="">
+          </picture>
+        </div>
+
+        <div class="box-size__destinos box-destinosimagenes">
+          <picture>
+            <img src="/assets/images/3THH.jpeg" alt="">
+          </picture>
+        </div>
+
+
+      </div>
+    </section>
+  </section>
+</body>
+
+</html>

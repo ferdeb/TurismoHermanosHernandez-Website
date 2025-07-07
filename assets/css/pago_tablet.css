@@ -1,0 +1,16 @@
+/* Ajuste de la navbar para desktop*/
+
+.nav__toggle 
+{
+  display: none;
+}
+
+.nav__menu 
+{
+  flex-direction: row;
+}
+
+.nav__menu li 
+{
+  display: block;
+}

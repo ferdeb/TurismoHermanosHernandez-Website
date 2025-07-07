@@ -1,0 +1,58 @@
+/* Ajuste de la navbar para desktop*/
+
+.nav__toggle 
+{
+  display: none;
+}
+
+.nav__menu 
+{
+  flex-direction: row;
+}
+
+.nav__menu li 
+{
+  display: block;
+}
+
+
+
+ 
+.boxes /* Aplica a todas las cajas*/
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-evenly;
+
+
+}
+
+.box /* Aplica a cada caja mientras esta sea seleccionada */
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 200px;
+  height: 50px;
+  position: relative;
+
+  margin: 1rem;
+
+
+  
+}
+
+.box-logo
+{
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.box-precio
+{
+  border: 3px solid #ff0000;
+  border-radius: 3rem;
+}
+

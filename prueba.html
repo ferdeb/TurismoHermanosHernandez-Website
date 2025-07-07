@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Precio</title>
+  <style>
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Calculadora de Precio</h1>
+
+  <form id="precioForm">
+    <label for="origen">Origen:</label>
+    <select id="origen" onchange="calcularPrecio()">
+      <option value="ciudad1">Ciudad 1</option>
+      <option value="ciudad2">Ciudad 2</option>
+      <!-- Agrega más opciones según tus necesidades -->
+    </select>
+
+    <label for="destino">Destino:</label>
+    <select id="destino" onchange="calcularPrecio()">
+      <option value="ciudadA">Ciudad A</option>
+      <option value="ciudadB">Ciudad B</option>
+      <!-- Agrega más opciones según tus necesidades -->
+    </select>
+
+    <p id="precioResultado">El precio es: $0.00</p>
+
+    <!-- Modificación del botón para redirigir al hacer clic -->
+    <button type="button" onclick="redirigir()">Pagar</button>
+  </form>
+
+  <script>
+    function calcularPrecio() {
+      // Obtiene los valores seleccionados
+      var origen = document.getElementById("origen").value;
+      var destino = document.getElementById("destino").value;
+
+      // Lógica para calcular el precio basado en las opciones seleccionadas
+      var precio = 0.00;
+
+      // Ejemplo de lógica de precios (puedes personalizar según tus necesidades)
+      if (origen === "ciudad1" && destino === "ciudadA") {
+        precio = 50.00;
+      } else if (origen === "ciudad2" && destino === "ciudadB") {
+        precio = 75.00;
+      } // Agrega más condiciones según tus necesidades
+
+      // Muestra el resultado en el elemento con id "precioResultado"
+      document.getElementById("precioResultado").textContent = "El precio es: $" + precio.toFixed(2);
+    }
+
+    function redirigir() {
+      // Obtiene la URL a la que deseas redirigir
+      var urlRedireccion = '/index.html';
+
+      // Redirige a la URL especificada
+      window.location.href = urlRedireccion;
+    }
+  </script>
+
+</body>
+</html>
